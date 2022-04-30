@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/authenticationFragment">
+
+    <fragment
+        android:id="@+id/authenticationFragment"
+        android:name="ru.ssau.providerrequest.presenter.screen.AuthenticationFragment"
+        android:label="AuthenticationFragment" >
+        <action
+            android:id="@+id/action_authenticationFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@+id/authenticationFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="ru.ssau.providerrequest.presenter.screen.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_authenticationFragment"
+            app:destination="@id/authenticationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="ru.ssau.providerrequest.presenter.screen.DetailFragment"
+        android:label="DetailFragment" >
+        <argument
+            android:name="request"
+            app:argType="ru.ssau.providerrequest.data.entity.Data" />
+        <action
+            android:id="@+id/action_detailFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="ru.ssau.providerrequest.presenter.screen.MapFragment"
+        android:label="MapFragment" >
+        <argument
+            android:name="long"
+            app:argType="float" />
+        <argument
+            android:name="lat"
+            app:argType="float" />
+    </fragment>
+</navigation>

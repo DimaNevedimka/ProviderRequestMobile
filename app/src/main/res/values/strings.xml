@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Provider-Request</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="log">Войти</string>
+    <string name="authentication">Авторизация</string>
+    <string name="request">ТЕКУЩИЕ ЗАЯВКИ</string>
+    <string name="end">Завершить</string>
+    <string name="undo_request">Отменить заявку</string>
+    <string name="show_house">Показать дом на карте</string>
+    <string name="exit">Выйти</string>
+    <string name="request_num">ЗАЯВКА № 12345</string>
+</resources>
