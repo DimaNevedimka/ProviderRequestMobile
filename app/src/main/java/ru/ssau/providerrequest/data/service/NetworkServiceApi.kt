@@ -30,7 +30,6 @@ interface NetworkServiceApi {
     ): UpdateRequest
 
     companion object {
-
         private const val LOGIN_RESPONSE = "login"
         private const val PASSWORD_RESPONSE = "password"
     }
