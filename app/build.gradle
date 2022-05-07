@@ -63,8 +63,4 @@ dependencies {
 
     //Yandex
     implementation 'com.yandex.android:maps.mobile:4.0.0-full'
-
-    //Mockk
-    testImplementation 'io.mockk:mockk:1.9.3'
-    androidTestImplementation 'io.mockk:mockk-android: 1.9.3'
 }
