@@ -44,7 +44,7 @@ class RequestItemAdapter :
                 address.text = item.home.address
                 date.text = item.home.updated_at
                 detail.text = item.comment
-                name.text = item.client.name + item.client.surname
+                name.text = item.client.name + " " + item.client.surname + " " + item.client.patronymic
                 tariff.text = item.tariff.name
                 number.text = item.id.toString()
                 status.text = item.status
